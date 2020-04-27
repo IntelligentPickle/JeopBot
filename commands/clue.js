@@ -59,9 +59,11 @@ module.exports = class extends Command {
         
                 message.channel.send(clueEmbed);
 
-            const clueAnswer = await message.prompt("Please answer:")
-
-            if (clueAnswer === clueParsed[0].answer) {
+                console.log(clueParsed[0].answer)
+                const clueAnswer = await message.prompt("Please answer:")
+            
+            console.log(`user said: ${clueAnswer}, answer is ${clueParsed[0].answer}`)
+            if (clueAnswer == clueParsed[0].answer) {
 
                 const correctEmbed = new Discord.MessageEmbed()
                     .setColor('GREEN')
@@ -80,11 +82,7 @@ module.exports = class extends Command {
 
         });
 
-        }).on("error", (err) => {
-
-            console.log("Error: " + err.message);
-
-        });
+        })
         
     }
 
