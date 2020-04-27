@@ -1,0 +1,16 @@
+{
+  "name": "jeopbot",
+  "version": "1.0.0",
+  "description": "Jeopbot is a simple Jeoprady Discord bot!",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Intelligent Pickle (Griffin Bauer)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^8.2.0",
+    "klasa": "github:dirigeants/klasa#master"
+  }
+}
